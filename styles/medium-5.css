@@ -10,6 +10,8 @@
         max-width: 64em;
     }
     
+    li { display: inline; }
+    
     /* section.forecast { display: block; } */
       
     table, th, td{ border: 1px solid black;
