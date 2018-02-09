@@ -1,9 +1,16 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    /* .forecast  table, th, td{ border: 1px solid black; } */  
   
   nav button { display:none; }  /* hamburger button does not need to be shown */
-  
-    section.forecast { display: ???; }
+
+    main section.forecast {
+        display: block;
+        max-width: 64em;
+    }
+    
+    /* section.forecast { display: block; } */
       
     table, th, td{ border: 1px solid black;
     

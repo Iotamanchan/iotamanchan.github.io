@@ -28,7 +28,6 @@ nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
 
-.forecast  table, th, td{ border: 1px solid black; }
 
 .town-article {float: left; }
 
@@ -37,7 +36,7 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
-section {}
+section { display:none}
 
 article p.town-article img { float: left; /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 5em; /* fill the page in the small/phone view */
