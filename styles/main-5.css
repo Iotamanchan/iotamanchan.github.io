@@ -16,11 +16,14 @@ header {
 }
 header h1 {
     border: 25px solid yellow;
+    background-color: yellow;
 }
 header img {}
 header .subheading {}
 
-nav { border: 25px solid aqua; }
+nav { border: 25px solid aqua;
+    background-color: aqua;
+}
 nav button {}
 nav ul {}
 nav ul li {}
