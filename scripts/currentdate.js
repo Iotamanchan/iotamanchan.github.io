@@ -1,13 +1,9 @@
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth() + 1; //January is 0!
-var yyyy = today.getFullYear();
+var d = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var dayOfTheWeek = days[d.getDay()];
+var day = d.getDate();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var month = months[d.getMonth()];
+var year = d.getFullYear();
 
-if (dd < 10) {
-    dd = '0' + dd; } 
-
-if (mm < 10) {
-    mm = '0' + mm; } 
-
-today = mm + '/' + dd + '/' + yyyy;
-document.write(today);
+document.getElementById("currentdate").innerHTML = dayOfTheWeek + ", " + day + " " + month + " " + year;
