@@ -78,6 +78,12 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
+section, div {margin: 1rem;}
+.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
+div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
+
+
 section { display:none}
 
 article p.town-article img { float: left; /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */

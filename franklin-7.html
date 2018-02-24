@@ -19,6 +19,21 @@
         font-size: 48px;
       }
     </style>
+    
+    <script>
+
+<!-- Begin
+function windChill(form) {
+wind=eval(form.wind.value);
+temp=eval(form.temp.value);
+chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
+5.81-0.25*wind)*(temp-91.4)+91.4);
+form.windchill.value = chill;
+}
+//  End -->
+</script>
+     
+    
 </head>
 <body>
 
@@ -30,17 +45,25 @@
 	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
       
   </header>
+    
+<section>
+	<div class="form">
+	Enter a three-digit integer: <input type="text" id="aNum" maxlength="3" size="1">
+	<input type="submit" onclick="computeNum()" value="Run Calculation">
+	<div id="output">Output Placeholder</div>
+	</div>
+</section>
 
-  <!-- site navigation use placeholder references -->
+    <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul>
     	<li><a href="#">Home</a></li>
-    	<li class="active"><a href="#">Franklin</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
-    	<li><a href="#">Gallery</a></li>
+    	<li><a href="Gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
     
@@ -101,6 +124,46 @@
       </table>
     </section>
       
+      <section>
+	<div class="form">
+	Enter a three-digit integer: <input type="text" id="aNum" maxlength="3" size="1">
+	<input type="submit" onclick="computeNum()" value="Run Calculation">
+	<div id="output">Output Placeholder</div>
+	</div>
+      </section>
+      
+      <form action="" method=post name=windform>
+<center>
+<table border=1 cellpadding=3 cellspacing=0 width="250">
+<tr>
+<td align=center>
+Wind Speed (MPH) =
+</td>
+<td align=center>
+<input type=text name=wind value="" size=6>
+</td>
+</tr>
+<tr>
+<td align=center>
+Air Temperature (ºF) =
+</td>
+<td align=center>
+<input type=text name=temp value="" size=6>
+</td>
+</tr>
+<tr>
+<td colspan=2 align=center>
+<br>
+<input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
+<p>
+<input name=windchill type=text value="" size=10> º F
+</td>
+<tr>
+</table>
+</center>
+</form>
+      
+      
     <article>
       <h3>Franklin Breaks Record</h3>	
       <p class="town-article">
@@ -116,10 +179,12 @@
     <aside>
       Contact information placeholder
     </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title |<script src="scripts/currentdate.js"></script> <span id="currentdate"></span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title |<span id="currentdate"></span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
   
 
 </body>
