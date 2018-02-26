@@ -38,7 +38,7 @@ form.windchill.value = chill;
 <body>
 
   <header>
-    <img src="images/weatherpic.png" alt="The site logo" width="250em" height="250em">
+    <div id="logo"><img src="images/weatherpic.png" alt="The site logo" width="250" height="250"></div>
     <h1>Franklin</h1>
     <div class="subheading">We know it, so you do too!</div>
       <!--<div class="hamburger" onclick="toggleHam()"></div>-->
@@ -46,13 +46,6 @@ form.windchill.value = chill;
       
   </header>
     
-<section>
-	<div class="form">
-	Enter a three-digit integer: <input type="text" id="aNum" maxlength="3" size="1">
-	<input type="submit" onclick="computeNum()" value="Run Calculation">
-	<div id="output">Output Placeholder</div>
-	</div>
-</section>
 
     <!-- site navigation use placeholder references -->
   <nav>
@@ -70,7 +63,7 @@ form.windchill.value = chill;
   <main>
     <h2>The City of Franklin</h2>
     <figure>
-      <img src="images/puddle.jpeg" alt="puddle" height="200px">
+      <img src="images/puddle.jpeg" alt="puddle" height="200">
     </figure>
     <section>
       <h3>Weather Summary</h3>    
@@ -81,7 +74,7 @@ form.windchill.value = chill;
       <div class="current">
         Sunny
         <picture>
-            <img src="images/rainbow-weather.png" alt="rainbow" width="auto" height="auto">
+            <img src="images/rainbow-weather.png" alt="rainbow" width="100" height="100">
         </picture>
       </div>   
       <div class="conditions">
@@ -132,7 +125,7 @@ form.windchill.value = chill;
 	</div>
       </section>
       
-      <form action="" method=post name=windform>
+      <form action="variable" method=post name=windform>
 <center>
 <table border=1 cellpadding=3 cellspacing=0 width="250">
 <tr>
@@ -158,7 +151,6 @@ Air Temperature (ºF) =
 <p>
 <input name=windchill type=text value="" size=10> º F
 </td>
-<tr>
 </table>
 </center>
 </form>
@@ -170,9 +162,9 @@ Air Temperature (ºF) =
         
         short article content placeholder
       </p>
-        <img src="images/SpaceWeather.jpeg" alt="Space" width="50%" height="auto">
+        <img src="images/SpaceWeather.jpeg" alt="Space" width="700" height="500">
 		</article>		  
-        <img src="images/franklinsmall.jpg" alt="franklin" width="auto" height="auto">
+        <img src="images/franklinsmall.jpg" alt="franklin" width="600" height="600">
   </main>
     
   <footer>
