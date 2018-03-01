@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franklin Weather</title>
+  <title>Storm Center</title>
   <meta name="author" content="James Beefelt">
   <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->    
@@ -22,15 +22,6 @@
     
     <script>
 
-<!-- Begin
-function windChill(form) {
-wind=eval(form.wind.value);
-temp=eval(form.temp.value);
-chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
-5.81-0.25*wind)*(temp-91.4)+91.4);
-form.windchill.value = chill;
-}
-//  End -->
 </script>
      
     
@@ -39,7 +30,7 @@ form.windchill.value = chill;
 
   <header>
     <div id="logo"><img src="images/weatherpic.png" alt="The site logo" width="250" height="250"></div>
-    <h1>Franklin</h1>
+    <h1>Storm Center</h1>
     <div class="subheading">We know it, so you do too!</div>
       <!--<div class="hamburger" onclick="toggleHam()"></div>-->
 	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
@@ -55,15 +46,15 @@ form.windchill.value = chill;
     	<li class="active"><a href="franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="Gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
     
   <main>
-    <h2>The City of Franklin</h2>
+    <h2>Storm Center</h2>
     <figure>
-      <img src="images/puddle.jpeg" alt="puddle" height="200">
+      
     </figure>
     <section>
       <h3>Weather Summary</h3>    
@@ -82,82 +73,60 @@ form.windchill.value = chill;
         <p>Wind Speed:</p>  
       </div>           
     </section>
+      
+      <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormy" id="stormform">
+      <fieldset>
+          <legend>Storm Info</legend>
+          Full Name:<input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required ><br>
+            Email:<input name="email" type="email" value="" placeholder="something@gmail.com" required >
+          <br>
+          Phone Number:<input name="phone" type="tel" value="" placeholder="7037910220" pattern="[0-9]{10,20}" required >
+          <br>
+          Zip Code:<input name="zip" type="number" value="" placeholder="20112" required >
+          <br>
+          Storm Date:<input name="stormdate" type="date" value="" >
+          <br>
+          Storm Type:<input list="browsers">
+  <label><datalist id="browsers">
+    <option value="Flash Flood">
+    <option value="Hail">
+    <option value="Hurricane">
+    <option value="Thunderstorm">
+    <option value="Tornado">
+      </datalist></label> 
+         <label>Storm Severity
+          0
+          <input type="range">
+             10</label>
+          <label><select name="region">
+          
+          <option value="selectregion" disabled>Select Region</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfield">Springfield</option>
+          
+              </select></label>
+          
+         User In Danger: <br>
+          <input type="radio" name="danger" value="yes" checked> yes<br>
+            <input type="radio" name="danger" value="maybe"> maybe<br>
+            <input type="radio" name="danger" value="no"> no
         
-    <section class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </section>
-      
-      <section>
-	<div class="form">
-	Enter a three-digit integer: <input type="text" id="aNum" maxlength="3" size="1">
-	<input type="submit" onclick="computeNum()" value="Run Calculation">
-	<div id="output">Output Placeholder</div>
-	</div>
-      </section>
-      
-      <form action="variable" method=post name=windform>
-<center>
-<table border=1 cellpadding=3 cellspacing=0 width="250">
-<tr>
-<td align=center>
-Wind Speed (MPH) =
-</td>
-<td align=center>
-<input type=text name=wind value="" size=6>
-</td>
-</tr>
-<tr>
-<td align=center>
-Air Temperature (ºF) =
-</td>
-<td align=center>
-<input type=text name=temp value="" size=6>
-</td>
-</tr>
-<tr>
-<td colspan=2 align=center>
-<br>
-<input type=button value="Calculate Wind Chill" onclick="windChill(this.form)">
-<p>
-<input name=windchill type=text value="" size=10> º F
-</td>
-</table>
-</center>
-</form>
+          <label>
+          Relevent information: <br>
+              <textarea name="storminfo" rows="5" cols="10">
+          clouds overhead
+          </textarea>
+          </label>
+          <input type="submit" onclick="">
+          
+          </fieldset>
+      </form>
+              
       
       
     <article>
-      <h3>Franklin Breaks Record</h3>	
+      <h3>Storm Center Breaks Record</h3>	
       <p class="town-article">
         
         short article content placeholder

@@ -28,6 +28,29 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
 }*/
 
+form#stormform {
+    margin: 1em 3%
+    
+}
+fieldset {
+    background-color: aqua;
+    border-radius: .5em;
+    margin: 1em 0;
+    border: solid 1px;
+}
+legend {
+    color: blue;
+    margin-left: 6%;
+    padding: .5em;
+    border: solid 1px;
+    background-color: cornflowerblue;
+    border-radius: .4em;
+}
+label {
+ display: block;
+    margin: 1em;
+}
+
 
 @media only screen and (min-width: 37.5em) {
 	header,	nav {	margin: 0 auto;	max-width: 600px;	}
