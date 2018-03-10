@@ -34,3 +34,5 @@ var weatherObject2 = new XMLHttpRequest();
                 
                 document.getElementById('forecast').innerHTML = weatherInfo3.forecast.txt_forecast.forecastday[7].fcttext;
             }
+            
+            ///
