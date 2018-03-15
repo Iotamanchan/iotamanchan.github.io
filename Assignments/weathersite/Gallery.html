@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <meta name="author" content="James Beefelt">
+  <meta name="description" content="page description placeholder">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/grid.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+   <style>
+      body {
+       font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 48px;
+      }
+    </style>
+</head>
+<body> 
+      <header>
+    <div id="logo"><img src="images/weatherpic.png" alt="The site logo" width="250" height="250"></div>
+    <h1>Gallery</h1>
+    <div class="subheading">We know it, so you do too!</div>
+      <!--<div class="hamburger" onclick="toggleHam()"></div>-->
+	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      
+  </header>
+    
+   <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="Gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+
+<div class="grid">
+    <div><img src="images/sunshine1.jpg" alt="sunshine"></div>
+    <div><img src="images/waethergonewiild_1280.jpg" alt="thunder"></div>
+    <div><img src="images/wbg98.jpg" alt="lighthouse"></div>
+    <div><img src="images/Weather-frost-snow-February-11th-2016.jpg" alt="frost river"></div>
+    <div><img src="images/180220170354_1_540x360.jpg" alt="rain"></div>
+    <div><img src="images/VDAYFI-994x441.jpg" alt="heart"></div>
+</div>
+    
+    <footer>
+    <aside>
+     Contact at:  14857 Norman Ridge Rd. 20114 Phone: 1(772) 992-4145
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title |<span id="currentdate"></span></p>
+  </footer>
+    
+    </body>
