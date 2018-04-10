@@ -1,0 +1,137 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+ * {margin:0} 
+header { background-color: blue;
+display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px; ;color:white;
+}
+h1 { margin-left: .75rem;	padding: .5rem; }
+.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+
+.navigation { 
+    float:left;
+    list-style: none; padding-left: 0; }
+.navigation li { 
+    
+    display: inline; }
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 50.5em) {
+	.navigation.responsive { position: relative; }
+	.navigation.responsive li { background-color: #eee;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid red; }
+	.navigation.responsive li a {	padding: 1rem; text-align: left;	display: inline-flex; text-decoration:none; }
+	.navigation.responsive li a:hover { background-color: #ddd; }
+}
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+form#stormform {
+    margin: 1em 3%
+    
+}
+fieldset {
+    background-color: red;
+    border-radius: .5em;
+    margin: 1em 0;
+    border: solid 1px;
+}
+legend {
+    color: white;
+    margin-left: 6%;
+    padding: .5em;
+    border: solid 1px;
+    background-color: palevioletred;
+    border-radius: .4em;
+}
+label {
+ display: block;
+    margin: 1em;
+}
+
+
+@media only screen and (min-width: 37.5em) {
+	header,	nav {	margin: 0 auto;	max-width: 600px;	}
+	h1 { text-align: center; }
+	.hamburger { display: none;	}
+	.navigation {	background-color: #333;	overflow: hidden;	text-align: left;	}
+	.navigation li { display: inline-block; margin-left: .25rem; }
+	.navigation a {	display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;}
+	.navigation a:hover {	color: #000; background-color: #777;	}
+}
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    background-color: blue;
+    color: white;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+    
+}
+header h1 {
+    border: 25px solid black;
+    background-color: Red;
+    color: white;
+}
+header img {}
+header .subheading { 
+    display: block;
+    border: 25px solid black;
+color: white;
+    background-color: red;
+}
+
+
+nav { 
+    border: 25px solid black; background: red; width:80%;margin:0 auto;
+}
+nav button {}
+nav ul {list-style-type: none; margin: 5px; padding: 0; font-size:1.5rem; font-weight:bold; }
+nav ul li { }
+nav ul li a { text-decoration:none; color: white; display:grid; }
+nav ul li.active a {  background-color: palevioletred; color: white; }
+nav ul li a:hover {background-color:blue; color:white;}
+
+
+.town-article {float: left; }
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section, div {margin: 1rem;}
+.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
+div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
+
+
+section { display:none}
+
+article p.town-article img { float: left; /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 5em; /* fill the page in the small/phone view */
+  margin: 5em;
+}
+
+footer {}
+footer aside {font-size: 16px }
+footer>p {font-size: 16px } /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

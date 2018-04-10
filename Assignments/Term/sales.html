@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="James Beefelt">
+  <meta name="description" content="page description placeholder">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/animatedMenu.css">
+    <style>
+      body {
+       font-family: 'Roboto Mono', monospace;
+        font-size: 48px;
+      }
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script>
+        $(function(){
+	   $('.stuffforsale > li').hover(function(){
+            
+            $(this).addClass('openSesame');
+                                   
+        }, function(){
+           
+           $(this).removeClass('openSesame');
+       });
+                                    
+
+	})
+</script>
+     
+    
+</head>
+<body>
+
+  <header>
+    <div id="logo"><img src="images/DY_RLIDUQAANl1L.jpg" alt="cyclist"></div>
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading">Have a nice ride!</div>
+      <!--<div class="hamburger" onclick="toggleHam()"></div>-->
+	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      
+  </header>
+    
+
+    <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="AdventureTours.html">Adventure Tours</a></li>
+    	<li><a href="Events.html">Events</a></li>
+    	<li class="active"><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contacts.html">Contacts</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <ul class="stuffforsale">
+      <li><img src="images/81FjSv1vnVL._SL1500_.jpg" alt="thingy">1</li>
+        <li><img src="images/175c2ef4e49dc482d4bf14c2a5a36944.jpg" alt="again">2</li>
+        <li><img src="images/one-crit.jpg" alt="third">3</li>
+      </ul>
+    
+      <p> Item 1: "Atlas" <br>
+            Price: $170<br>
+            Description: A powerful ride for experienced cyclists.  Strong frame results in a comfortable ride over even the rockiest of terrain.  Slim tires allow for effective street riding as well as mountain biking</p><br>
+      <p> Item 2: "Fortified"<br>
+            Price: $140<br>
+            Description: A dependable ride for amateur cyclists as well as hobbyists.  The basic frame and suitable features assure a dependable street ride and lesser mountain trails. </p><br>
+      <p> Item 3: "Festka" <br>
+            Price: $160<br>
+            Description: Advanced handling and high seat make this ride the optimal racing companion.  Speed is the name of the game with this bike!</p>
+    
+    </main>
+      
+      
+      
+    
+  <footer>
+    <aside>
+      
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke Website <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="James Beefelt">
+  <meta name="description" content="page description placeholder">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <style>
+      body {
+       font-family: 'Roboto Mono', monospace;
+        font-size: 48px;
+      }
+    </style>
+    
+    <script>
+
+</script>
+     
+    
+</head>
+<body>
+
+  <header>
+    <div id="logo"><img src="images/DY_RLIDUQAANl1L.jpg" alt="cyclist"></div>
+    <h1>The Mountain Spoke</h1>
+    <div class="subheading">Have a nice ride!</div>
+      <!--<div class="hamburger" onclick="toggleHam()"></div>-->
+	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+      
+  </header>
+    
+
+    <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="AdventureTours.html">Adventure Tours</a></li>
+    	<li class="active"><a href="Events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contacts.html">Contacts</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+      <p>The Annual "Cycle the Continental Divide" event occurs every second Monday in July.  Register below to
+      participate in the "Cycle the Continental Divide" event.  Equipment may be purchased or rented from the online
+      store, or in person at any The Mountain Spoke locations.</p> <br>
+      <p>Price: $35 per person</p> <br>
+      <p>Trail Length: 20 Miles</p>
+    
+       <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormy" id="stormform">
+      <fieldset>
+          <legend>Event Registration</legend>
+          Full Name:<input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required ><br>
+            Email:<input name="email" type="email" value="" placeholder="something@gmail.com" required >
+          <br>
+          Phone Number:<input name="phone" type="tel" value="" placeholder="7037910220" pattern="[0-9]{10,20}" required >
+          <br>
+          Country:<input name="country" type="text" value="" placeholder="USA" required >
+          <br>
+          Birthday:<input name="birthday" type="date" value="" >
+          <br>
+          Skill Level:<input list="browsers">
+  <label><datalist id="browsers">
+    <option value="Beginner">
+    <option value="Novice">
+    <option value="Amateur">
+    <option value="Hobbyist">
+    <option value="Professional">
+      </datalist></label> 
+         
+          
+          
+         Is this your first attempt at the Continental Divide?: <br>
+          <input type="radio" name="danger" value="yes" checked> yes<br>
+    
+            <input type="radio" name="danger" value="no"> no
+        
+          <label>
+          Additional Information: <br>
+              <textarea name="storminfo" rows="5" cols="10">
+          Already owns a bicycle
+          </textarea>
+          </label>
+          <input type="submit" onclick="">
+          
+          </fieldset>
+      </form>
+        
+    
+    </main>
+      
+    <!--  <img src="images/37A402B200000578-3763327-image-a-43_1472465068354.jpg" alt="big bike"> -->
+      
+    
+  <footer>
+    <aside>
+     
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke Website <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    </body>
+</html>
