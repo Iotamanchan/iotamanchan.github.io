@@ -75,7 +75,9 @@ body {
     background-color: blue;
     color: white;
   /* Declare the base font-family - from google font api or other */
+    
 }
+p.item { display:none;}
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -119,7 +121,7 @@ main figure img { width: 100%; }
 
 section, div {margin: 1rem;}
 .form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
-div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+div {background-color:blue; padding: 1rem; border:1px solid #444;}
 #aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}
 
 

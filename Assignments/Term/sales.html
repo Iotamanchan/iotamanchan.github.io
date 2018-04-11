@@ -24,6 +24,15 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     
     <script>
+        $( document ).ready(function() {
+            $( "div.stuff" ).hover(function() {
+                $(this).find("p.item").slideToggle("slow");
+                //$(this).siblings("p.item").slideUp("slow");
+  
+            });
+        });
+        
+        
         $(function(){
 	   $('.stuffforsale > li').hover(function(){
             
@@ -72,15 +81,16 @@
         <li><img src="images/one-crit.jpg" alt="third">3</li>
       </ul>
     
-      <p> Item 1: "Atlas" <br>
-            Price: $170<br>
-            Description: A powerful ride for experienced cyclists.  Strong frame results in a comfortable ride over even the rockiest of terrain.  Slim tires allow for effective street riding as well as mountain biking</p><br>
-      <p> Item 2: "Fortified"<br>
-            Price: $140<br>
-            Description: A dependable ride for amateur cyclists as well as hobbyists.  The basic frame and suitable features assure a dependable street ride and lesser mountain trails. </p><br>
-      <p> Item 3: "Festka" <br>
-            Price: $160<br>
-            Description: Advanced handling and high seat make this ride the optimal racing companion.  Speed is the name of the game with this bike!</p>
+      <div class="stuff"> Item 1: "Atlas" <br>
+            <p class="item">Price: $170<br>
+            Description: A powerful ride for experienced cyclists.  Strong frame results in a comfortable ride over even the rockiest of terrain.  Slim tires allow for effective street riding as well as mountain biking</p>
+      </div><br>
+      <div class="stuff"> Item 2: "Fortified"<br>
+           <p class="item"> Price: $140<br>
+               Description: A dependable ride for amateur cyclists as well as hobbyists.  The basic frame and suitable features assure a dependable street ride and lesser mountain trails. </p></div> <br>
+      <div class="stuff"> Item 3: "Festka" <br>
+            <p class="item"> Price: $160<br>
+                Description: Advanced handling and high seat make this ride the optimal racing companion.  Speed is the name of the game with this bike!</p></div>
     
     </main>
       
